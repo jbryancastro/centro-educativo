@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centro Hellen Keller - Error de acceso</title>
+<link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+<main class="login-container">
+	<section class="login-box has-error">
+		<div class="panel-brand">Centro Hellen Keller</div>
+
+		<h1>Centro Hellen Keller</h1>
+
+		<form action="dashboard-admin.html" method="get" aria-label="Formulario de inicio de sesión con error">
+			<label for="identificador" class="sr-only">Correo electrónico o cédula</label>
+			<input id="identificador" name="identificador" type="text" placeholder="Correo o Cédula" required aria-required="true" autocomplete="username">
+
+			<label for="clave" class="sr-only">Contraseña</label>
+			<input id="clave" name="clave" type="password" placeholder="Contraseña" required aria-required="true" autocomplete="current-password">
+			<button type="submit">Iniciar Sesión</button>
+		</form>
+		<p class="error-banner" role="alert">Credenciales incorrectas. Verifique e intente nuevamente. (RF-03)</p>
+
+		<p class="recuperar"><a href="recuperar.html">¿Olvidó su contraseña?</a></p>
+
+		<nav class="quick-links">
+			<a href="dashboard-admin.html">Entrar como Administrador</a>
+			<a href="dashboard-docente.html">Entrar como Docente</a>
+			<a href="dashboard-encargado.html">Entrar como Encargado</a>
+		</nav>
+	</section>
+</main>
+
+</body>
+</html>

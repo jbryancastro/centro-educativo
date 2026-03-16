@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recuperación de Contraseña</title>
+<link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+<main class="login-container">
+	<section class="login-box">
+		<div class="panel-brand">Centro Hellen Keller</div>
+
+		<h1>Recuperación</h1>
+
+		<form action="index.html" method="get" aria-label="Formulario de recuperación de contraseña">
+			<label for="recuperacion-id">Correo o cédula</label>
+			<input id="recuperacion-id" name="recuperacion-id" type="text" placeholder="Correo o Cédula" required aria-required="true" autocomplete="email">
+
+			<label for="verificacion-audible">Verificación audible</label>
+			<select id="verificacion-audible" name="verificacion-audible" required aria-required="true">
+				<option value="">Seleccione una opción</option>
+				<option>Escuché y confirmé el código</option>
+				<option>Reproducir código nuevamente</option>
+			</select>
+
+			<audio controls class="audio-check" aria-label="Audio de verificación">
+				<source src="../assets/img/verificacion-demo.mp3" type="audio/mpeg">
+			</audio>
+
+			<button type="submit">Enviar enlace de restablecimiento</button>
+		</form>
+
+		<p class="form-note">El enlace de restablecimiento tendrá una vigencia de 15 minutos. </p>
+		<p class="recuperar"><a href="index.html">Volver al inicio de sesión</a></p>
+	</section>
+</main>
+
+</body>
+</html>

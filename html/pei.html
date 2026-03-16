@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestión de PEI</title>
+<link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+<div class="app-shell">
+  <header class="topbar">
+    <div class="logo">Centro Hellen Keller</div>
+    <div class="user">Docente | <a href="index.html">Cerrar Sesión</a></div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="dashboard-docente.html">Grupos</a></li>
+          <li><a class="active" href="pei.html">PEI</a></li>
+          <li><a href="#seguimiento">Seguimiento</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="contenido">
+      <h1>Crear / Editar PEI</h1>
+
+      <form class="pei-form">
+        <label for="modo-pei">Acción</label>
+        <select id="modo-pei">
+          <option>Crear PEI</option>
+          <option>Editar PEI existente</option>
+        </select>
+
+        <label for="estudiante">Seleccionar Estudiante</label>
+        <select id="estudiante">
+          <option>Estudiante A</option>
+          <option>Estudiante B</option>
+          <option>Estudiante C</option>
+        </select>
+
+        <label for="objetivos">Objetivos del Plan</label>
+        <input id="objetivos" type="text">
+
+        <label for="estrategias">Estrategias</label>
+        <input id="estrategias" type="text">
+
+        <label for="observaciones">Observaciones</label>
+        <textarea id="observaciones" rows="3"></textarea>
+
+        <label for="avance">Avance de la semana</label>
+        <textarea id="avance" rows="3"></textarea>
+
+        <button type="submit" class="full-width">Guardar</button>
+      </form>
+
+      <section class="panel-block" id="seguimiento">
+        <h2>Historial de avances</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Observación</th>
+              <th>Avance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>13/03/2026</td>
+              <td>Participa más en dinámicas de grupo.</td>
+              <td>Cumple 80% del objetivo semanal.</td>
+            </tr>
+            <tr>
+              <td>06/03/2026</td>
+              <td>Requiere apoyo visual para iniciar actividades.</td>
+              <td>Mejora gradual en autonomía.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

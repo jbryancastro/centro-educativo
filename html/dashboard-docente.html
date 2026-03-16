@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Docente</title>
+<link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+<div class="app-shell">
+  <header class="topbar">
+    <div class="logo">Centro Hellen Keller</div>
+    <div class="user">Docente | <a href="index.html">Cerrar Sesión</a></div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a class="active" href="dashboard-docente.html">Grupos</a></li>
+          <li><a href="pei.html">PEI</a></li>
+          <li><a href="#avances">Avances</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="contenido">
+      <h1>Grupos Asignados</h1>
+
+      <section class="student-list">
+        <article class="student-row">
+          <p>Grupo A - Comunicación Funcional</p>
+          <div class="row-actions">
+            <a class="btn" href="pei.html">Crear PEI</a>
+            <button type="button">Registrar Avance</button>
+          </div>
+        </article>
+
+        <article class="student-row">
+          <p>Grupo B - Integración Sensorial</p>
+          <div class="row-actions">
+            <a class="btn" href="pei.html">Crear PEI</a>
+            <button type="button">Registrar Avance</button>
+          </div>
+        </article>
+
+        <article class="student-row">
+          <p>Grupo C - Apoyo Académico</p>
+          <div class="row-actions">
+            <a class="btn" href="pei.html">Crear PEI</a>
+            <button type="button">Registrar Avance</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel-block" id="avances">
+        <h2>Últimos avances</h2>
+        <ul class="alert-list">
+          <li>Grupo A - Se alcanzó objetivo semanal de participación.</li>
+          <li>Grupo B - Se agregó observación de sesión terapéutica.</li>
+          <li>Grupo C - Se programó ajuste en estrategia de lectura.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</div>
+
+</body>
+</html>
