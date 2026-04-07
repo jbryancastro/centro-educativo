@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+<!-- Metadatos y recursos globales -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gestión de Programas</title>
@@ -11,13 +12,17 @@
 
 <body>
 
+<!-- Contenedor principal del modulo de programas -->
 <div class="app-shell">
+	<!-- Barra superior con marca y sesion -->
 	<header class="topbar">
 		<div class="logo">Centro Hellen Keller</div>
 		<div class="user">Admin | <a href="index.html">Cerrar Sesión</a></div>
 	</header>
 
+	<!-- Estructura lateral de navegacion y contenido -->
 	<div class="layout">
+		<!-- Menu del administrador -->
 		<aside class="sidebar">
 			<nav>
 				<ul>
@@ -28,12 +33,15 @@
 			</nav>
 		</aside>
 
+		<!-- Contenido principal de gestion de programas -->
 		<main class="contenido">
+			<!-- Encabezado con titulo y accion principal -->
 			<div class="content-header">
 				<h1>Gestión de Programas</h1>
 				<button type="button" aria-label="Crear programa educativo">Crear Programa</button>
 			</div>
 
+			<!-- Filtros y busqueda de programas -->
 			<div class="toolbar">
 				<select>
 					<option>Filtrar por Rol</option>
@@ -43,6 +51,7 @@
 				<input type="search" placeholder="Buscar">
 			</div>
 
+			<!-- Tabla de programas con acciones por fila -->
 			<table>
 				<thead>
 					<tr>

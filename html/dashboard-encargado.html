@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+<!-- Metadatos y recursos globales -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dashboard Encargado</title>
@@ -11,13 +12,17 @@
 
 <body>
 
+<!-- Contenedor principal del dashboard encargado -->
 <div class="app-shell">
+	<!-- Barra superior con marca y sesion -->
 	<header class="topbar">
 		<div class="logo">Centro Hellen Keller</div>
 		<div class="user">Encargado | <a href="index.html">Cerrar Sesión</a></div>
 	</header>
 
+	<!-- Estructura de navegacion lateral y contenido -->
 	<div class="layout">
+		<!-- Menu lateral del perfil encargado -->
 		<aside class="sidebar">
 			<nav>
 				<ul>
@@ -28,9 +33,11 @@
 			</nav>
 		</aside>
 
+		<!-- Contenido de progreso, detalle y alertas -->
 		<main class="contenido">
 			<h1>Progreso del Estudiante</h1>
 
+			<!-- Tarjetas de resumen de progreso -->
 			<section class="info-grid" aria-label="Resumen de progreso">
 				<article class="tarjeta">
 					<h2>Asistencia mensual</h2>
@@ -46,12 +53,14 @@
 				</article>
 			</section>
 
+			<!-- Descripcion del plan educativo individual -->
 			<section class="panel-block">
 				<h2>Detalle del PEI</h2>
 				<p>Objetivo principal: fortalecer habilidades comunicativas funcionales en el aula y hogar.</p>
 				<p>Estrategias activas: apoyos visuales, rutinas guiadas y seguimiento semanal.</p>
 			</section>
 
+			<!-- Lista de alertas y actualizaciones recientes -->
 			<section class="panel-block" id="alertas">
 				<h2>Alertas de avance</h2>
 				<ul class="alert-list">

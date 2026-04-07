@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+<!-- Metadatos y recursos globales -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gestión de PEI</title>
@@ -11,13 +12,17 @@
 
 <body>
 
+<!-- Contenedor principal del modulo PEI -->
 <div class="app-shell">
+  <!-- Barra superior con marca y sesion -->
   <header class="topbar">
     <div class="logo">Centro Hellen Keller</div>
     <div class="user">Docente | <a href="index.html">Cerrar Sesión</a></div>
   </header>
 
+  <!-- Estructura de menu lateral y contenido -->
   <div class="layout">
+    <!-- Navegacion del docente -->
     <aside class="sidebar">
       <nav>
         <ul>
@@ -28,9 +33,11 @@
       </nav>
     </aside>
 
+    <!-- Contenido principal de creacion y seguimiento PEI -->
     <main class="contenido">
       <h1>Crear / Editar PEI</h1>
 
+      <!-- Formulario de captura del plan educativo -->
       <form class="pei-form">
         <label for="modo-pei">Acción</label>
         <select id="modo-pei">
@@ -60,6 +67,7 @@
         <button type="submit" class="full-width">Guardar</button>
       </form>
 
+      <!-- Historial tabulado de avances registrados -->
       <section class="panel-block" id="seguimiento">
         <h2>Historial de avances</h2>
         <table>

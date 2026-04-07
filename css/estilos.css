@@ -1,7 +1,9 @@
+/* Reset base y caja de todos los elementos */
 * {
 box-sizing: border-box;
 }
 
+/* Estilos globales de tipografia y fondo */
 body {
 margin: 0;
 font-family: "Segoe UI", Arial, sans-serif;
@@ -11,11 +13,13 @@ color: #27313f;
 background: #d9d9dd;
 }
 
+/* Estilos base para enlaces */
 a {
 color: inherit;
 text-decoration: none;
 }
 
+/* Herencia de fuente en controles de formulario */
 input,
 select,
 button,
@@ -23,6 +27,7 @@ textarea {
 font: inherit;
 }
 
+/* Configuracion visual de areas de texto */
 textarea {
 padding: 9px 10px;
 background: #f8f9fb;
@@ -31,6 +36,7 @@ color: #2f3b49;
 resize: vertical;
 }
 
+/* Contenedor principal de la aplicacion */
 .app-shell {
 width: min(1120px, calc(100% - 32px));
 margin: 44px auto;
@@ -38,6 +44,7 @@ background: #eff1f4;
 border: 1px solid #c8cdd4;
 }
 
+/* Barra superior con marca e informacion de usuario */
 .topbar {
 display: flex;
 justify-content: space-between;
@@ -49,6 +56,7 @@ font-size: 15px;
 font-weight: 600;
 }
 
+/* Identidad visual del sistema */
 .logo {
 display: flex;
 align-items: center;
@@ -57,6 +65,7 @@ font-size: 18px;
 color: #3f4c5e;
 }
 
+/* Icono decorativo del logo */
 .logo::before {
 content: "";
 width: 18px;
@@ -65,31 +74,37 @@ background: linear-gradient(135deg, #8f9bad, #607086);
 clip-path: polygon(50% 0%, 100% 28%, 100% 72%, 50% 100%, 0% 72%, 0% 28%);
 }
 
+/* Texto de usuario en la barra superior */
 .user {
 color: #59687a;
 }
 
+/* Enlace destacado de cerrar sesion */
 .user a {
 font-weight: 700;
 }
 
+/* Distribucion principal: menu lateral y contenido */
 .layout {
 display: flex;
 min-height: 430px;
 }
 
+/* Panel lateral de navegacion */
 .sidebar {
 width: 205px;
 background: #eef0f3;
 border-right: 1px solid #cfd4dc;
 }
 
+/* Lista de enlaces del menu lateral */
 .sidebar ul {
 list-style: none;
 margin: 0;
 padding: 10px 0;
 }
 
+/* Enlaces de navegacion del menu lateral */
 .sidebar a {
 display: block;
 padding: 12px 14px;
@@ -98,6 +113,7 @@ font-weight: 600;
 color: #4c5b6f;
 }
 
+/* Vineta visual para cada opcion del menu */
 .sidebar a::before {
 content: "▣";
 font-size: 12px;
@@ -105,18 +121,21 @@ margin-right: 6px;
 color: #7a8796;
 }
 
+/* Estado activo y hover del menu */
 .sidebar a.active,
 .sidebar a:hover {
 background: #d7dde5;
 color: #2d3b4e;
 }
 
+/* Area de contenido principal de cada vista */
 .contenido {
 flex: 1;
 padding: 22px;
 background: #f6f7f9;
 }
 
+/* Titulo principal de pantalla */
 h1 {
 margin: 0 0 18px;
 font-size: 38px;
@@ -124,11 +143,13 @@ font-weight: 700;
 color: #2e3b4a;
 }
 
+/* Contenedor de tarjetas de resumen */
 .tarjetas {
 display: flex;
 gap: 16px;
 }
 
+/* Tarjeta individual de indicador */
 .tarjeta {
 min-width: 190px;
 background: #e5e8ec;
@@ -137,6 +158,7 @@ padding: 16px;
 text-align: center;
 }
 
+/* Subtitulo de cada tarjeta */
 .tarjeta h2 {
 margin: 0;
 font-size: 16px;
@@ -144,6 +166,7 @@ font-weight: 600;
 color: #5a6777;
 }
 
+/* Valor principal de cada tarjeta */
 .tarjeta p {
 margin: 10px 0 0;
 font-size: 36px;
@@ -151,6 +174,7 @@ font-weight: 700;
 line-height: 1;
 }
 
+/* Encabezado de secciones con acciones */
 .content-header {
 display: flex;
 justify-content: space-between;
@@ -158,6 +182,7 @@ align-items: center;
 margin-bottom: 14px;
 }
 
+/* Barra de filtros y busqueda */
 .toolbar {
 display: flex;
 justify-content: space-between;
@@ -165,6 +190,7 @@ gap: 14px;
 margin-bottom: 14px;
 }
 
+/* Estilo compartido de campos en toolbar, PEI y login */
 .toolbar select,
 .toolbar input,
 .pei-form input,
@@ -178,14 +204,17 @@ color: #2f3b49;
 font-size: 16px;
 }
 
+/* Ancho de selector en toolbar */
 .toolbar select {
 width: 240px;
 }
 
+/* Ancho de campo de busqueda en toolbar */
 .toolbar input {
 width: 260px;
 }
 
+/* Tabla de datos en vistas administrativas */
 table {
 width: 100%;
 border-collapse: collapse;
@@ -194,6 +223,7 @@ border: 1px solid #c8ced6;
 font-size: 15px;
 }
 
+/* Celdas y encabezados de tabla */
 th,
 td {
 padding: 12px 14px;
@@ -201,17 +231,20 @@ border-bottom: 1px solid #d7dce4;
 text-align: left;
 }
 
+/* Encabezado de tabla */
 th {
 background: #eef1f5;
 font-weight: 700;
 color: #4a596b;
 }
 
+/* Grupo de botones de accion por fila */
 .table-actions {
 display: flex;
 gap: 6px;
 }
 
+/* Botones base del sistema */
 button,
 .btn {
 display: inline-flex;
@@ -227,11 +260,13 @@ font-weight: 600;
 cursor: pointer;
 }
 
+/* Estado hover de botones */
 button:hover,
 .btn:hover {
 background: #5f6b7d;
 }
 
+/* Botones compactos para acciones de tabla */
 .table-actions button {
 width: 40px;
 height: 40px;
@@ -239,6 +274,7 @@ padding: 0;
 font-size: 16px;
 }
 
+/* Lista vertical de grupos o estudiantes */
 .student-list {
 display: flex;
 flex-direction: column;
@@ -246,6 +282,7 @@ gap: 12px;
 max-width: 760px;
 }
 
+/* Grid informativo de resumen en dashboard de encargado */
 .info-grid {
 display: grid;
 grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -253,6 +290,7 @@ gap: 14px;
 margin-bottom: 16px;
 }
 
+/* Fila de informacion por grupo/estudiante */
 .student-row {
 display: flex;
 justify-content: space-between;
@@ -262,17 +300,20 @@ background: #eef1f5;
 border: 1px solid #cbd1d9;
 }
 
+/* Texto principal de fila de estudiante */
 .student-row p {
 margin: 0;
 font-size: 18px;
 font-weight: 600;
 }
 
+/* Acciones asociadas a cada fila */
 .row-actions {
 display: flex;
 gap: 10px;
 }
 
+/* Botones de accion en filas */
 .row-actions .btn,
 .row-actions button {
 height: 40px;
@@ -280,6 +321,7 @@ padding: 0 14px;
 font-size: 15px;
 }
 
+/* Formulario de creacion/edicion PEI */
 .pei-form {
 max-width: 520px;
 display: flex;
@@ -287,6 +329,7 @@ flex-direction: column;
 gap: 10px;
 }
 
+/* Bloques de panel para detalle e historial */
 .panel-block {
 margin-top: 18px;
 padding: 16px;
@@ -294,18 +337,21 @@ border: 1px solid #c8ced6;
 background: #fdfdfe;
 }
 
+/* Titulo secundario dentro de paneles */
 .panel-block h2 {
 margin: 0 0 10px;
 font-size: 24px;
 color: #344356;
 }
 
+/* Parrafos descriptivos de panel */
 .panel-block p {
 margin: 0 0 6px;
 font-size: 17px;
 line-height: 1.4;
 }
 
+/* Lista de alertas o avances */
 .alert-list {
 margin: 0;
 padding-left: 24px;
@@ -313,6 +359,7 @@ font-size: 16px;
 line-height: 1.5;
 }
 
+/* Etiquetas de formulario PEI */
 .pei-form label {
 margin-top: 8px;
 font-size: 17px;
@@ -320,11 +367,13 @@ font-weight: 600;
 color: #465467;
 }
 
+/* Boton de ancho completo */
 .full-width {
 width: 100%;
 margin-top: 8px;
 }
 
+/* Contenedor centrado para paginas de autenticacion */
 .login-container {
 min-height: 100vh;
 display: flex;
@@ -333,12 +382,14 @@ justify-content: center;
 padding: 24px;
 }
 
+/* Caja principal del formulario de login/recuperacion */
 .login-box {
 width: 560px;
 border: 1px solid #c9ced6;
 background: #f5f6f8;
 }
 
+/* Franja superior de marca institucional */
 .panel-brand {
 padding: 14px 18px;
 font-size: 16px;
@@ -348,6 +399,7 @@ border-bottom: 1px solid #c9ced6;
 background: #eceef2;
 }
 
+/* Icono decorativo de la marca */
 .panel-brand::before {
 content: "";
 display: inline-block;
@@ -359,16 +411,19 @@ background: linear-gradient(135deg, #8f9bad, #607086);
 clip-path: polygon(50% 0%, 100% 28%, 100% 72%, 50% 100%, 0% 72%, 0% 28%);
 }
 
+/* Titulo principal dentro de login */
 .login-box h1 {
 margin: 30px 0 22px;
 font-size: 42px;
 text-align: center;
 }
 
+/* Espaciado interno del formulario de login */
 .login-box form {
 padding: 0 42px;
 }
 
+/* Etiquetas dentro de login/recuperacion */
 .login-box label {
 display: block;
 margin: 4px 0 6px;
@@ -377,11 +432,13 @@ font-weight: 600;
 color: #4c5a6d;
 }
 
+/* Boton principal en formulario de login */
 .login-box button {
 width: 100%;
 margin-top: 2px;
 }
 
+/* Enlace de recuperacion o regreso */
 .recuperar {
 margin: 16px 0 0;
 font-size: 15px;
@@ -390,10 +447,12 @@ text-align: center;
 color: #5b6778;
 }
 
+/* Estilo del enlace interno de recuperacion */
 .recuperar a {
 text-decoration: underline;
 }
 
+/* Nota informativa bajo formularios */
 .form-note {
 margin: 12px 22px 0;
 font-size: 15px;
@@ -401,6 +460,7 @@ line-height: 1.4;
 color: #4b5a6d;
 }
 
+/* Mensaje de error de credenciales */
 .error-banner {
 margin: 8px 22px 0;
 padding: 10px 12px;
@@ -411,15 +471,18 @@ background: #f6e4e4;
 display: none;
 }
 
+/* Visualizacion condicional del error en login */
 .login-box.has-error .error-banner {
 display: block;
 }
 
+/* Reproductor de audio para verificacion */
 .audio-check {
 width: 100%;
 margin: 10px 0 6px;
 }
 
+/* Clase de accesibilidad para texto solo visible a lectores */
 .sr-only {
 position: absolute;
 width: 1px;
@@ -432,6 +495,7 @@ white-space: nowrap;
 border: 0;
 }
 
+/* Enlaces rapidos de acceso por rol */
 .quick-links {
 display: flex;
 justify-content: center;
@@ -442,6 +506,7 @@ font-weight: 600;
 color: #4b5a6c;
 }
 
+/* Indicador de foco para navegacion por teclado */
 input:focus,
 select:focus,
 textarea:focus,
@@ -451,6 +516,7 @@ outline: 3px solid #1d5fa7;
 outline-offset: 2px;
 }
 
+/* Ajustes responsivos para tablets y moviles */
 @media (max-width: 860px) {
 .app-shell {
 width: calc(100% - 20px);

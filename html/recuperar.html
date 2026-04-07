@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+<!-- Metadatos y recursos globales -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Recuperación de Contraseña</title>
@@ -11,12 +12,17 @@
 
 <body>
 
+<!-- Contenedor principal de recuperacion -->
 <main class="login-container">
+	<!-- Tarjeta del formulario de recuperacion -->
 	<section class="login-box">
+		<!-- Marca institucional -->
 		<div class="panel-brand">Centro Hellen Keller</div>
 
+		<!-- Titulo de la vista -->
 		<h1>Recuperación</h1>
 
+		<!-- Formulario para solicitar restablecimiento -->
 		<form action="index.html" method="get" aria-label="Formulario de recuperación de contraseña">
 			<label for="recuperacion-id">Correo o cédula</label>
 			<input id="recuperacion-id" name="recuperacion-id" type="text" placeholder="Correo o Cédula" required aria-required="true" autocomplete="email">
@@ -35,7 +41,9 @@
 			<button type="submit">Enviar enlace de restablecimiento</button>
 		</form>
 
+		<!-- Nota de vigencia del enlace -->
 		<p class="form-note">El enlace de restablecimiento tendrá una vigencia de 15 minutos. </p>
+		<!-- Enlace de regreso al login -->
 		<p class="recuperar"><a href="index.html">Volver al inicio de sesión</a></p>
 	</section>
 </main>

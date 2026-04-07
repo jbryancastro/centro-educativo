@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+<!-- Metadatos y recursos globales -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Centro Hellen Keller</title>
@@ -11,12 +12,17 @@
 
 <body>
 
+<!-- Contenedor principal de autenticacion -->
 <main class="login-container">
+	<!-- Tarjeta de inicio de sesion -->
 	<section class="login-box">
+		<!-- Marca institucional -->
 		<div class="panel-brand">Centro Hellen Keller</div>
 
+		<!-- Titulo visible de la pantalla -->
 		<h1>Centro Hellen Keller</h1>
 
+		<!-- Formulario de acceso -->
 		<form action="dashboard-admin.html" method="get" aria-label="Formulario de inicio de sesión">
 			<label for="identificador" class="sr-only">Correo electrónico o cédula</label>
 			<input id="identificador" name="identificador" type="text" placeholder="Correo o Cédula" required aria-required="true" autocomplete="username">
@@ -25,10 +31,13 @@
 			<input id="clave" name="clave" type="password" placeholder="Contraseña" required aria-required="true" autocomplete="current-password">
 			<button type="submit">Iniciar Sesión</button>
 		</form>
+		<!-- Mensaje de error de credenciales -->
 		<p class="error-banner" role="alert">Credenciales incorrectas. Verifique e intente nuevamente. (RF-03)</p>
 
+		<!-- Enlace de recuperacion de contrasena -->
 		<p class="recuperar"><a href="recuperar.html">¿Olvidó su contraseña?</a></p>
 
+		<!-- Accesos rapidos por perfil -->
 		<nav class="quick-links">
 			<a href="dashboard-admin.html">Entrar como Administrador</a>
 			<a href="dashboard-docente.html">Entrar como Docente</a>
