@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gestión de PEI</title>
 <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
-<link rel="stylesheet" href="../css/estilos.css">
+<link rel="stylesheet" href="../css/estilos.css"><!-- Contenedor CSS-->
 </head>
 
 <body>
@@ -22,10 +22,9 @@
 
   <!-- Estructura de menu lateral y contenido -->
   <div class="layout">
-    <!-- Navegacion del docente -->
     <aside class="sidebar">
       <nav>
-        <ul>
+        <ul><!-- tabla con enlace -->
           <li><a href="dashboard-admin.html">Dashboard</a></li>
           <li><a class="active" href="pei.html">Crear PEI</a></li>
           <li><a href="programas.html">Programas</a></li>
@@ -39,7 +38,7 @@
 
       <!-- Formulario de captura del plan educativo -->
       <form class="pei-form" id="pei-form" action="#" method="post">
-        <!-- Se usan campos basicos para practicar captura estructurada de datos -->
+        <!-- Se usan campos basicos para captura estructurada de datos -->
         <label for="estudiante">Seleccionar Estudiante</label>
         <select id="estudiante" name="estudiante" required>
           <option>Estudiante A</option>
@@ -59,7 +58,7 @@
         <label for="avance">Avance de la semana</label>
         <textarea id="avance" name="avance" rows="3"></textarea>
 
-        <!-- Boton unico para mantener el flujo simple en esta version -->
+        <!-- Boton para guardar la informacion -->
         <button type="submit" class="full-width">Guardar</button>
       </form>
 
@@ -68,6 +67,6 @@
   </div>
 </div>
 
-<script src="../js/pei.js"></script>
+<script src="../js/pei.js"></script><!-- Conector al jS -->
 </body>
 </html>

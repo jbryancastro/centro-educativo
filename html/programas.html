@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gestión de Programas</title>
 <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
-<link rel="stylesheet" href="../css/estilos.css">
+<link rel="stylesheet" href="../css/estilos.css"><!-- Connector al CSS -->
 </head>
 
 <body>
@@ -20,12 +20,12 @@
 		<div class="user">Admin | <a href="index.html">Cerrar Sesión</a></div>
 	</header>
 
-	<!-- Estructura lateral de navegacion y contenido -->
+	
 	<div class="layout">
 		<!-- Menu del administrador -->
 		<aside class="sidebar">
 			<nav>
-				<ul>
+				<ul> <!-- Tabla con enlace -->
 					<li><a href="dashboard-admin.html">Dashboard</a></li>
 					<li><a href="pei.html">Crear PEI</a></li>
 					<li><a class="active" href="programas.html">Programas</a></li>
@@ -35,7 +35,7 @@
 
 		<!-- Contenido principal de gestion de programas -->
 		<main class="contenido">
-			<!-- Encabezado con titulo y accion principal -->
+			<!-- Encabezado con titulo -->
 			<div class="content-header">
 				<h1>Gestión de Programas</h1>
 				<button type="button">Crear Programa</button>
@@ -53,11 +53,10 @@
 				<input type="search" placeholder="Buscar programa por nombre">
 			</div>
 
-			<!-- Tabla de programas con acciones por fila -->
-			<!-- Este formato facilita futuras mejoras como paginacion o edicion modal -->
+			<!-- Tabla de programas or fila -->
 			<table>
 				<thead>
-					<tr>
+					<tr><!-- Encabezado tabla -->
 						<th>Nombre</th>
 						<th>Tipo</th>
 						<th>Estado</th>
@@ -66,7 +65,7 @@
 				</thead>
 
 				<tbody>
-					<tr>
+					<tr><!-- Datos de tabla -->
 						<td>Terapia de Vida</td>
 						<td>Habilidades</td>
 						<td>Activo</td>
@@ -76,7 +75,7 @@
 						</td>
 					</tr>
 
-					<tr>
+					<tr><!-- Datos de tabla -->
 						<td>Entrenamiento Sensorial</td>
 						<td>Terapéutico</td>
 						<td>Activo</td>
@@ -86,7 +85,7 @@
 						</td>
 					</tr>
 
-					<tr>
+					<tr><!-- Datos de tabla -->
 						<td>Especial</td>
 						<td>Académico</td>
 						<td>Activo</td>
