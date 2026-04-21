@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
-<body>
+<body class="auth-page">
 
 <!-- Contenedor principal de autenticacion -->
 <main class="login-container">
@@ -21,27 +21,23 @@
 
 		<!-- Titulo visible de la pantalla -->
 		<h1>Centro Hellen Keller</h1>
+		<p class="login-subtitle">Ingreso al módulo administrativo</p>
 
 		<!-- Formulario de acceso -->
-		<form action="dashboard-admin.html" method="get" aria-label="Formulario de inicio de sesión">
-			<label for="identificador" class="sr-only">Correo electrónico o cédula</label>
-			<input id="identificador" name="identificador" type="text" placeholder="Correo o Cédula" required aria-required="true" autocomplete="username">
+		<form action="dashboard-admin.html" method="get">
+			<!-- Estos campos simulan autenticacion y redirigen al dashboard -->
+			<label for="identificador">Correo electrónico o cédula</label>
+			<input id="identificador" name="identificador" type="text" placeholder="Correo o Cédula" required autocomplete="username">
 
-			<label for="clave" class="sr-only">Contraseña</label>
-			<input id="clave" name="clave" type="password" placeholder="Contraseña" required aria-required="true" autocomplete="current-password">
+			<label for="clave">Contraseña</label>
+			<input id="clave" name="clave" type="password" placeholder="Contraseña" required autocomplete="current-password">
 			<button type="submit">Iniciar Sesión</button>
 		</form>
-		<!-- Mensaje de error de credenciales -->
-		<p class="error-banner" role="alert">Credenciales incorrectas. Verifique e intente nuevamente. (RF-03)</p>
 
-		<!-- Enlace de recuperacion de contrasena -->
-		<p class="recuperar"><a href="recuperar.html">¿Olvidó su contraseña?</a></p>
-
-		<!-- Accesos rapidos por perfil -->
+		<!-- Acceso rapido al panel principal -->
 		<nav class="quick-links">
+			<!-- En un sistema real, este acceso se habilita tras validar credenciales -->
 			<a href="dashboard-admin.html">Entrar como Administrador</a>
-			<a href="dashboard-docente.html">Entrar como Docente</a>
-			<a href="dashboard-encargado.html">Entrar como Encargado</a>
 		</nav>
 	</section>
 </main>

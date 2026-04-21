@@ -27,8 +27,8 @@
 			<nav>
 				<ul>
 					<li><a href="dashboard-admin.html">Dashboard</a></li>
+					<li><a href="pei.html">Crear PEI</a></li>
 					<li><a class="active" href="programas.html">Programas</a></li>
-					<li><a href="usuarios.html">Usuarios</a></li>
 				</ul>
 			</nav>
 		</aside>
@@ -38,20 +38,23 @@
 			<!-- Encabezado con titulo y accion principal -->
 			<div class="content-header">
 				<h1>Gestión de Programas</h1>
-				<button type="button" aria-label="Crear programa educativo">Crear Programa</button>
+				<button type="button">Crear Programa</button>
 			</div>
 
 			<!-- Filtros y busqueda de programas -->
 			<div class="toolbar">
+				<!-- Primero se filtra por tipo y luego se puede buscar por nombre -->
 				<select>
-					<option>Filtrar por Rol</option>
+					<option>Filtrar por tipo</option>
 					<option>Habilidades</option>
 					<option>Académico</option>
+					<option>Terapéutico</option>
 				</select>
-				<input type="search" placeholder="Buscar">
+				<input type="search" placeholder="Buscar programa por nombre">
 			</div>
 
 			<!-- Tabla de programas con acciones por fila -->
+			<!-- Este formato facilita futuras mejoras como paginacion o edicion modal -->
 			<table>
 				<thead>
 					<tr>
@@ -68,8 +71,8 @@
 						<td>Habilidades</td>
 						<td>Activo</td>
 						<td class="table-actions">
-							<button type="button" aria-label="Editar programa Terapia de Vida">✎</button>
-							<button type="button" aria-label="Eliminar programa Terapia de Vida">🗑</button>
+							<button type="button">Editar</button>
+							<button type="button">Eliminar</button>
 						</td>
 					</tr>
 
@@ -78,8 +81,8 @@
 						<td>Terapéutico</td>
 						<td>Activo</td>
 						<td class="table-actions">
-							<button type="button" aria-label="Editar programa Entrenamiento Sensorial">✎</button>
-							<button type="button" aria-label="Eliminar programa Entrenamiento Sensorial">🗑</button>
+							<button type="button">Editar</button>
+							<button type="button">Eliminar</button>
 						</td>
 					</tr>
 
@@ -88,8 +91,8 @@
 						<td>Académico</td>
 						<td>Activo</td>
 						<td class="table-actions">
-							<button type="button" aria-label="Editar programa Especial">✎</button>
-							<button type="button" aria-label="Eliminar programa Especial">🗑</button>
+							<button type="button">Editar</button>
+							<button type="button">Eliminar</button>
 						</td>
 					</tr>
 				</tbody>

@@ -4,19 +4,29 @@
 
 El Sistema de Gestión Académica del Centro Nacional de Educación Hellen Keller tiene como objetivo centralizar y optimizar los procesos académicos y administrativos de la institución.
 
-La plataforma permitirá la gestión de programas educativos especializados, planes educativos individualizados (PEI), seguimiento de progreso y comunicación entre administradores, docentes/terapeutas y encargados legales.
+En esta versión, el proyecto se enfoca en un flujo reducido validado por el profesor para presentar el núcleo funcional del sistema.
 
 ## Alcance del Proyecto
 
-El sistema incluirá:
+Pantallas aprobadas del programa:
 
-- Inicio de sesión con recuperación de contraseña.
-- Gestión de usuarios (administrador, docente/terapeuta, encargado legal).
-- Gestión de programas educativos y terapias.
-- Creación y seguimiento de Planes Educativos Individualizados (PEI).
-- Registro y consulta de progreso estudiantil.
+- Iniciar sesión.
+- Dashboard del administrador.
+- Formulario para crear PEI.
+- Gestión de programas (implementación opcional, incluida en este repositorio).
+
+El sistema incluye:
+
+- Inicio de sesión para acceso al módulo administrativo.
+- Navegación principal del administrador.
+- Creación de PEI mediante formulario.
+- Gestión básica de programas.
 
 No incluye:
+- Recuperación de contraseña en esta versión.
+- Gestión de usuarios en esta versión.
+- Dashboards de docente/terapeuta y encargado legal en esta versión.
+- Seguimiento detallado de progreso en esta versión.
 - Integración con sistemas externos.
 - Procesamiento de pagos.
 - Aplicación móvil nativa (solo versión web).
@@ -24,8 +34,6 @@ No incluye:
 ## Tipos de Usuario
 
 - Administrador
-- Docente / Terapeuta
-- Encargado Legal
 
 ## Convención de Commits
 

@@ -242,6 +242,8 @@ color: #4a596b;
 .table-actions {
 display: flex;
 gap: 6px;
+align-items: center;
+flex-wrap: wrap;
 }
 
 /* Botones base del sistema */
@@ -268,10 +270,12 @@ background: #5f6b7d;
 
 /* Botones compactos para acciones de tabla */
 .table-actions button {
-width: 40px;
-height: 40px;
-padding: 0;
-font-size: 16px;
+width: auto;
+min-width: 84px;
+height: 36px;
+padding: 0 10px;
+font-size: 14px;
+line-height: 1;
 }
 
 /* Lista vertical de grupos o estudiantes */
@@ -375,11 +379,20 @@ margin-top: 8px;
 
 /* Contenedor centrado para paginas de autenticacion */
 .login-container {
+min-height: auto;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 24px 16px;
+}
+
+/* Centrado estable de la pantalla principal de login */
+.auth-page {
 min-height: 100vh;
 display: flex;
 align-items: center;
 justify-content: center;
-padding: 24px;
 }
 
 /* Caja principal del formulario de login/recuperacion */
@@ -415,6 +428,12 @@ clip-path: polygon(50% 0%, 100% 28%, 100% 72%, 50% 100%, 0% 72%, 0% 28%);
 .login-box h1 {
 margin: 30px 0 22px;
 font-size: 42px;
+text-align: center;
+}
+
+/* Subtitulo del login */
+.login-subtitle {
+margin: 0 0 18px;
 text-align: center;
 }
 
