@@ -38,7 +38,7 @@
       <h1>Formulario para crear PEI</h1>
 
       <!-- Formulario de captura del plan educativo -->
-      <form class="pei-form" action="#" method="post">
+      <form class="pei-form" id="pei-form" action="#" method="post">
         <!-- Se usan campos basicos para practicar captura estructurada de datos -->
         <label for="estudiante">Seleccionar Estudiante</label>
         <select id="estudiante" name="estudiante" required>
@@ -62,9 +62,12 @@
         <!-- Boton unico para mantener el flujo simple en esta version -->
         <button type="submit" class="full-width">Guardar</button>
       </form>
+
+	  <p id="pei-message" class="form-message"></p>
     </main>
   </div>
 </div>
 
+<script src="../js/pei.js"></script>
 </body>
 </html>

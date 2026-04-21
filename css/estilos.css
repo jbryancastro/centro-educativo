@@ -355,6 +355,14 @@ font-size: 17px;
 line-height: 1.4;
 }
 
+/* Mensaje de confirmacion o error en formularios */
+.form-message {
+margin-top: 12px;
+font-size: 16px;
+font-weight: 600;
+color: #355b3d;
+}
+
 /* Lista de alertas o avances */
 .alert-list {
 margin: 0;
